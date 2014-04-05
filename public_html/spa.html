@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SPA starter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/spa.css" type="text/css">
+        <link rel="stylesheet" href="css/spa.shell.css" type="text/css">
+        <!-- 3rd party lib -->
+        <script id="jquery_js" src="js/libs/jquery/jquery.js"></script>
+        <script id="janchor_js" src="js/libs/jquery/jquery.uriAnchor.js"></script>
+        <!-- my lib -->
+        <script id ="spajs" src="js/spa.js"></script>
+        <script id="spashelljs" src="js/spa.shell.js"></script>
+        <script id="unloader" src="js/js_unloader.js"></script>
+
+        <script id="starter">
+            $(function() {
+                spa.initModule($('#spa'));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="spa"></div>
+    </body>
+</html>
